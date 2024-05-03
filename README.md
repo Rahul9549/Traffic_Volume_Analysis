@@ -30,25 +30,16 @@ By forecasting traffic volume, authorities can better allocate resources, plan r
    obtain real-time predictions of traffic volume.
    
 ## Project Files
-- Data: Contains the dataset used for training the model.
-- Models: Contains the trained machine learning models saved as pickle files.
+- Data: Contains the dataset used for training the model.[Traffic Volume.csv]
+- Models: Contains the trained machine learning models saved as pickle files.[Traffic_XGB_Model]
 - Notebooks: Jupyter notebooks used for data exploration, feature engineering, and model building.
 - Scripts: Python scripts for preprocessing data, training models, and deploying the Flask application.
-- Templates: HTML templates for the web application.
-- Static: Contains static files such as images and CSS for the web application.
+- Templates: HTML templates for the web application.[Index.html , Result.html]
+- Static: Contains static files such as images and CSS for the web application.[It would contain an Image file which you want to use as background] 
 
-## Usage
-To use the project, follow these steps:
-1. Clone the repository to your local machine using `git clone`.
-2. Install the required dependencies listed in `requirements.txt` using `pip install -r requirements.txt`.
-3. Run the Flask application using `python app.py` from the command line.
-4. Access the web application in your browser at `http://localhost:5000` and input parameters to obtain traffic volume predictions.
+#### The PDF file shows how the Webpage looks and after providing input for respective fields how we are getting the output. 
 
 ## Future Work
 - Explore additional features such as weather conditions, road infrastructure, and special events to improve prediction accuracy.
 - Enhance the user interface with additional features such as interactive charts, map visualizations, and historical traffic data.
 - Implement advanced machine learning techniques such as deep learning and ensemble methods to further improve model performance.
-
----
-
-Feel free to customize the content further and add any additional details specific to your project's goals, methodologies, and outcomes!
