@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Volume Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('/static/Traffic1.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #40e0d0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: black; 
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 105, 180, 0.5);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ddd;
+        }
+
+        label {
+            font-weight: bold;
+            color: black; 
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        select,
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: turquoise; 
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 22px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #48d1cc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Traffic Volume Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="Weekday">Weekday:</label>
+        <select name="Weekday" id="Weekday">
+            <option value="0">Sunday</option>
+            <option value="1">Monday</option>
+            <option value="2">Tuesday</option>
+            <option value="3">Wednesday</option>
+            <option value="4">Thursday</option>
+            <option value="5">Friday</option>
+            <option value="6">Saturday</option>
+        </select><br>
+        <label for="Hour">Hour of the Day (1-23):</label>
+        <input type="number" name="Hour" id="hr" min="1" max="23" value="1"><br>
+        <label for="Temp">Temperature (°C):</label>
+        <input type="number" name="Temp" id="Temp" min="-20" max="40" value="20"><br>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
+
